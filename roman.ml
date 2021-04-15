@@ -18,13 +18,13 @@ let rec roman b n =
   if n < 1 then ()
   else if n > 999 then
     begin
-      for x = 1 to n / 1000 do Buffer.add_char b 'M' done;
+      for _ = 1 to n / 1000 do Buffer.add_char b 'M' done;
       roman b (n mod 1000)
     end
   else
     roman_recurse b n roman_vals
 
-let to_string n =
+let roman_string_of_int n =
   let b = Buffer.create 32 in
-    roman_inner b n;
+    roman b n;
     Buffer.contents b

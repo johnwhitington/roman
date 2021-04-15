@@ -1,1 +1,1 @@
-val of_int : int -> string
+val roman_string_of_int : int -> string
