@@ -8,4 +8,5 @@
 
 (package
    (name roman)
-   (synopsis "Manipulate roman numerals (ocaml.org dune/opam tutorial)"))
+   (synopsis "Manipulate roman numerals (ocaml.org dune/opam tutorial)")
+   (depends ocaml))
